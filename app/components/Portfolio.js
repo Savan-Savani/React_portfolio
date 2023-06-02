@@ -1,74 +1,107 @@
 import Image from "next/image";
 import React from "react";
-import profileImg from "../../public/Images/profileImg.png"
-
+import work_1 from "../../public/Images/work_1.png";
+import work_2 from "../../public/Images/work_2.png";
+import "../css/portfolio.css";
+import { AiFillGithub } from "react-icons/ai";
 
 const Portfolio = () => {
   return (
     <div>
-      <div>
-        <h3 className="text-3xl py-1">Portfolio</h3>
-        <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-          I am a full stack Developer with 2 years of experience. Also, I am an
-          expert in native and cross-platform mobile applications. I have
-          experience as{" "}
-          <span className="text-teal-500">Full stack developer</span>.
-        </p>
-        <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-          I have strong communication skills and I am adaptable and fast
-          learner.
-        </p>
-      </div>
-      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={profileImg}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
+      <section className="py-4">
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
+          <h3 className="text-3xl py-1 font-bold text-gray-800 dark:text-white">
+            My Works
+          </h3>
+          <p className="text-sm py-2 leading-6 text-gray-800 dark:text-gray-300">
+            Experienced Full Stack Developer proficient in full stack
+            development, with a focus on building native and cross-platform
+            mobile applications. Dedicated to delivering robust and scalable
+            solutions to meet client objectives.
+          </p>
         </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={profileImg}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
+      </section>
+
+      <section className="portfolio flex justify-center p-10 mb-2rem">
+        <div class="project-card">
+          <div class="project-card__left">
+            <h4 class="text-sm">React JS ,Redux ,firebase ,Tailwind CSS</h4>
+          </div>
+          <div>
+            <div class="project-card__middle">
+              <Image src={work_1} alt="App image" className="work__image" />
+            </div>
+            <div class="project-card__right p-5">
+              <h2 class="text-2xl mb-2">
+                Youtube
+                <br />
+                clone
+              </h2>
+              <div className="whitespace-nowrap mt-[5%] absolute left-[21rem]">
+                <div className="text_container">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://yt-clone-by-savan.web.app/"
+                    className="text-[1rem] text_website"
+                  >
+                    VISIT THE WEBSITE
+                  </a>
+                </div>
+                <span class="project-card__socials">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/Savan-Savani/youtube-by-Savan"
+                  >
+                    <AiFillGithub className="text-[1.5rem]" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={profileImg}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
+      </section>
+      <section className="portfolio flex justify-center p-10 mb-2rem">
+        <div class="project-card">
+          <div class="project-card__left">
+            <h4 class="text-sm">NEXT JS ,TypeScript ,MongoDB ,Prisma</h4>
+          </div>
+          <div>
+            <div class="project-card__middle">
+              <Image src={work_2} alt="App image" className="work__image" />
+            </div>
+            <div class="project-card__right p-5">
+              <h2 class="text-2xl mb-2">
+                Messenger
+                <br />
+                clone
+              </h2>
+              <div className="whitespace-nowrap mt-[5%] absolute left-[21rem]">
+                <div className="text_container">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://messenger-two-tau.vercel.app/"
+                    className="text_website text-[1rem]"
+                  >
+                    VISIT THE WEBSITE
+                  </a>
+                </div>
+                <span class="project-card__socials">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/Savan-Savani/Messenger"
+                  >
+                    <AiFillGithub className="text-[1.5rem]" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={profileImg}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={profileImg}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className="basis-1/3 flex-1">
-          <Image
-            src={profileImg}
-            className="rounded-lg object-cover"
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-      </div>
+      </section>
     </div>
   );
 };

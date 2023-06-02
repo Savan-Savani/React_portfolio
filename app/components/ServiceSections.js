@@ -60,7 +60,13 @@ const ServiceSections = () => {
                       cross-platform mobile applications.
                     </p>
                   </div>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 mt-5 rounded-lg bg-kjColorLight dark:bg-kjColorBlack border-2 border-kjColorLight py-10 relative">
+                  <div
+                    className="grid grid-cols-1 lg:grid-cols-2 mt-5 rounded-lg  border-2 py-10 relative"
+                    style={{
+                      background:
+                        "linear-gradient(338.83deg, #f8c6ff -3.41%, rgba(255, 196, 255, 0) 52.31%), #ffeec4",
+                    }}
+                  >
                     <div className="p-5 md:mx-8 text-center bg-gray-100 rounded-lg leading-7">
                       <Timeline totalProgress={totalProgress2} paused>
                         <Tween from={{ opacity: 0 }} to={{ opacity: 1 }}>
@@ -68,7 +74,12 @@ const ServiceSections = () => {
                             frontend apps
                           </h2>
                           <p className="mb-5 px-10">
-                          I have extensive experience in developing portfolio websites using the MERN stack, Next.js, Tailwind CSS, and other modern front-end technologies, ensuring visually appealing and engaging user experiences.                          </p>
+                            I have extensive experience in developing portfolio
+                            websites using the MERN stack, Next.js, Tailwind
+                            CSS, and other modern front-end technologies,
+                            ensuring visually appealing and engaging user
+                            experiences.{" "}
+                          </p>
                         </Tween>
                       </Timeline>
 
@@ -78,9 +89,9 @@ const ServiceSections = () => {
                             backend apps
                           </h2>
                           <p className="mb-5 px-10">
-                            Build scalable and maintainable server applications
-                            using cutting-edge technologies such as Nest.js,
-                            Docker, and MongoDB.
+                            Build modern and resilient server applications by
+                            harnessing the capabilities of Node.js, MongoDB,
+                            PostgreSQL, and Docker.
                           </p>
                         </Tween>
                       </Timeline>
@@ -88,12 +99,13 @@ const ServiceSections = () => {
                       <Timeline totalProgress={totalProgress4} paused>
                         <Tween from={{ opacity: 0 }} to={{ opacity: 1 }}>
                           <h2 className="text-lg font-black uppercase mb-3 data-3">
-                            native apps
+                            mobile apps
                           </h2>
                           <p className="mb-5 px-10">
-                            Use Flutter for building simple native mobile
-                            applications. Flutter is modern, fast,
-                            cross-platform, and popular.
+                            Develop native and cross-platform mobile
+                            applications using the power of React Native and
+                            SwiftUI for native iOS , along with Kotlin for
+                            native Android app development.
                           </p>
                         </Tween>
                       </Timeline>

@@ -1,0 +1,100 @@
+.portfolio .project-card {
+  width: 70%;
+  height: 30rem;
+  border: 0.2rem solid #20222e;
+  box-sizing: border-box;
+  border-radius: 7.3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+      39.4deg,
+      #b6a0ea -2.55%,
+      rgba(182, 160, 234, 0) 45.21%
+    ),
+    #f1ebff;
+  max-width: 720px;
+}
+.portfolio .project-card__left {
+  padding: 4rem 2rem 4rem 4rem;
+}
+.portfolio h4 {
+  transform: rotate(180deg);
+  writing-mode: tb-rl;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  line-height: 92.4%;
+  letter-spacing: 0.19em;
+  color: #4d1b1b;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "burtons";
+  src: url("../../public/Burtons.otf");
+}
+.portfolio .project-card__middle {
+  width: 70%;
+  position: absolute;
+  border-radius: 1rem;
+  overflow: hidden;
+  top: 1.8rem;
+  margin: 1rem;
+}
+
+.portfolio .project-card__right {
+  display: flex;
+  position: absolute;
+  padding-top: 6em;
+  padding-left: 3em;
+}
+
+.portfolio h2 {
+  line-height: 105%;
+  font-size: 2.5rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  font-family: "burtons";
+  src: url("../../public/Burtons.otf");
+}
+.work__image {
+  height: 16rem;
+  width: 32rem;
+  object-fit: cover;
+}
+.portfolio a {
+  font-family: "burtons";
+  src: url("../../public/Burtons.otf");
+}
+.portfolio .project-card__socials {
+  display: flex;
+  justify-content: center;
+  margin: 18%;
+}
+.text_container {
+  display: inline-block;
+}
+
+.text_website {
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.text_website::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 30%;
+  height: 2px;
+  background-color: rgb(112, 238, 183);
+  transition: width 0.3s ease-in-out;
+}
+
+.text_website:hover::after {
+  width: 100%;
+}

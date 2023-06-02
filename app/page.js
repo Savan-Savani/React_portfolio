@@ -1,18 +1,24 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import profileImg from "../public/Images/profileImg.png";
 import Eye from "./components/Eye";
 import ServiceSections from "./components/ServiceSections";
 import Portfolio from "./components/Portfolio";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+    window.open("/resume.pdf", "_blank");
   };
 
   return (
@@ -30,16 +36,26 @@ export default function Home() {
             </div>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  className={`cursor-pointer text-2xl ${
-                    darkMode ? "text-white" : ""
-                  }`}
-                  onClick={toggleDarkMode}
-                />
+                {darkMode ? (
+                  <BsFillSunFill
+                    className={`cursor-pointer text-2xl ${
+                      darkMode ? "text-white" : ""
+                    }`}
+                    onClick={toggleDarkMode}
+                  />
+                ) : (
+                  <BsFillMoonStarsFill
+                    className={`cursor-pointer text-2xl ${
+                      darkMode ? "text-white" : ""
+                    }`}
+                    onClick={toggleDarkMode}
+                  />
+                )}
               </li>
               <li>
                 <a
                   href="#"
+                  onClick={handleResumeClick}
                   className={`bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 ${
                     darkMode ? "dark:from-gray-800 dark:to-gray-700" : ""
                   }`}
@@ -105,6 +121,60 @@ export default function Home() {
           <Portfolio />
         </section>
       </main>
+      <div>
+        <footer className="bg-gray-800 text-gray-200">
+          <div className="container mx-auto py-8 px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold">About Me</h3>
+                <p className="mt-4">
+                  Versatile software and web developer, designer with a creative
+                  flair, committed to delivering impactful solutions and driving
+                  success.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Contact</h3>
+                <p className="mt-4">
+                  <a href="mailto:savansavani111@gmail.com?subject=Hello%20there">
+                    Email: savansavani111@gmail.com
+                  </a>
+                </p>
+                <p>Location: Canada</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Follow Me</h3>
+                <ul className="flex mt-4 space-x-4">
+                  <li>
+                    <a href="https://github.com/Savan-Savani">
+                      <FaGithub />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/savansavani/">
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="bg-gray-900">
+            <div className="container mx-auto py-4 px-4">
+              <p className="text-center text-sm text-gray-500">
+                &copy; 2023 Savañ Savani. All rights reserved. |{" "}
+                <a href="#" className="text-gray-300">
+                  Privacy Policy
+                </a>{" "}
+                |{" "}
+                <a href="#" className="text-gray-300">
+                  Terms of Service
+                </a>
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
