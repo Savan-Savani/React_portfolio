@@ -28,7 +28,7 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <div className="flex items-center">
               <div className="relative bg-gradient-to-b from-teal-500 rounded-full mx-2 h-10 w-10 overflow-hidden md:h-10 md:w-10">
-                <Image src={profileImg} objectFit="cover" layout="fill" />
+                <Image src={profileImg} objectFit="cover" layout="fill" alt="profile image"/>
               </div>
               <h1 className="text-xl font-burtons dark:text-white">
                 Developed by Savan
