@@ -26,7 +26,7 @@ export default function Home() {
       <main className="px-10 bg-[#fefaf6] dark:bg-gray-900 md:px-20 lg:px-40 ">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <div className="flex items-center">
+            <div className="flex items-center ml-[-30px]">
               <div className="relative bg-gradient-to-b from-teal-500 rounded-full mx-2 h-10 w-10 overflow-hidden md:h-10 md:w-10">
                 <Image
                   src={profileImg}
@@ -61,7 +61,7 @@ export default function Home() {
                 <a
                   href="#"
                   onClick={handleResumeClick}
-                  className={`bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 ${
+                  className={`bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md md:ml-8 ml-4 ${
                     darkMode ? "dark:from-gray-800 dark:to-gray-700" : ""
                   }`}
                 >
@@ -69,7 +69,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <div className="text-5xl flex justify-center py-3 text-gray-600 dark:text-gray-400">
+                <div className="md:text-5xl flex justify-center py-3 text-gray-600 dark:text-gray-400 text-2xl">
                   <a
                     className="mx-2"
                     href="https://github.com/Savan-Savani"

@@ -37,7 +37,7 @@ const Portfolio = () => {
                 <br />
                 clone
               </h2>
-              <div className="whitespace-nowrap mt-[5%] absolute left-[21rem]">
+              <div className="whitespace-nowrap mt-[5%] absolute md:left-[21rem] flex justify-center items-center md:inline">
                 <div className="text_container">
                   <a
                     rel="noopener"
@@ -77,7 +77,7 @@ const Portfolio = () => {
                 <br />
                 clone
               </h2>
-              <div className="whitespace-nowrap mt-[5%] absolute left-[21rem]">
+              <div className="whitespace-nowrap mt-[5%] absolute md:left-[21rem] flex justify-center items-center md:inline">
                 <div className="text_container">
                   <a
                     rel="noopener"

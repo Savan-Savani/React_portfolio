@@ -98,3 +98,25 @@
 .text_website:hover::after {
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .portfolio {
+    padding: 0rem;
+  }
+  .portfolio .project-card {
+    width: 100%;
+    height: 32rem;
+  }
+  .portfolio .project-card__left {
+    padding: 1rem;
+  }
+  .portfolio .project-card__right {
+    display: inline;
+    padding-top: 4rem;
+    padding-left: 2rem;
+  }
+
+  .portfolio .project-card__socials {
+    margin: 10%;
+    margin-bottom: 20px;
+  }
+}
