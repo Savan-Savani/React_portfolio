@@ -1,5 +1,5 @@
 .portfolio .project-card {
-  width: 70%;
+  width: 100%;
   height: 30rem;
   border: 0.2rem solid #20222e;
   box-sizing: border-box;
@@ -111,12 +111,57 @@
   }
   .portfolio .project-card__right {
     display: inline;
-    padding-top: 4rem;
-    padding-left: 2rem;
+    padding-top: 20%;
+    padding-left: 20%;
   }
 
   .portfolio .project-card__socials {
     margin: 10%;
     margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .portfolio {
+    padding: 1rem;
+  }
+  .portfolio .project-card__left {
+    padding: 2rem;
+  }
+  .portfolio .project-card {
+    width: 100%;
+  }
+  .portfolio h2 {
+    font-size: 2rem;
+  }
+  .portfolio .project-card__right {
+    padding-left: 6%;
+  }
+  .portfolio__data {
+    position: unset;
+    display: block;
+    margin: auto;
+    padding-left: 10%;
+  }
+  .portfolio a {
+    font-size: 0.8rem;
+  }
+
+  .portfolio .project-card__socials {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .portfolio__data {
+    padding-left: 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .portfolio .project-card {
+    width: 100%;
+  }
+  .portfolio__data {
+    display: inline;
+    left: 16rem;
   }
 }

@@ -32,12 +32,12 @@ const Portfolio = () => {
               <Image src={work_1} alt="App image" className="work__image" />
             </div>
             <div class="project-card__right p-5">
-              <h2 class="text-2xl mb-2">
+              <h2 class="text-2xl mb-2 portfoio__name">
                 Youtube
                 <br />
                 clone
               </h2>
-              <div className="whitespace-nowrap mt-[5%] absolute md:left-[21rem] flex justify-center items-center md:inline">
+              <div className="whitespace-nowrap mt-[5%] absolute lg:left-[21rem] flex justify-center items-center  portfolio__data">
                 <div className="text_container">
                   <a
                     rel="noopener"
@@ -72,12 +72,12 @@ const Portfolio = () => {
               <Image src={work_2} alt="App image" className="work__image" />
             </div>
             <div class="project-card__right p-5">
-              <h2 class="text-2xl mb-2">
+              <h2 class="text-2xl mb-2 portfoio__name">
                 Messenger
                 <br />
                 clone
               </h2>
-              <div className="whitespace-nowrap mt-[5%] absolute md:left-[21rem] flex justify-center items-center md:inline">
+              <div className="whitespace-nowrap mt-[5%] absolute lg:left-[21rem] flex justify-center items-center portfolio__data">
                 <div className="text_container">
                   <a
                     rel="noopener"

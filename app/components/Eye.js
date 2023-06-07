@@ -57,7 +57,7 @@ const Eye = () => {
   };
 
   return (
-    <div className="flex items-center justify-center w-96 h-96 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl mb-[50px] ml-[-37px] md:my-4 md:mx-4 md:mb-0 md:ml-0">
+    <div className="flex items-center justify-center w-96 h-96 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl mb-[50px] md:my-4 md:mx-4 md:mb-0 md:ml-0">
       <div
         ref={eyeRef}
         className="relative w-72 h-[45%] rounded-[80%] bg-white shadow-md mt-16"

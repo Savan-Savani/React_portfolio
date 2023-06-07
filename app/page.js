@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className={`app ${darkMode ? "dark" : ""}`}>
       <main className="px-10 bg-[#fefaf6] dark:bg-gray-900 md:px-20 lg:px-40 ">
-        <section className="min-h-screen">
+        <section className="h-auto mb-40">
           <nav className="py-10 mb-12 flex justify-between">
             <div className="flex items-center ml-[-30px]">
               <div className="relative bg-gradient-to-b from-teal-500 rounded-full mx-2 h-10 w-10 overflow-hidden md:h-10 md:w-10">
@@ -90,9 +90,9 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="block md:flex md:justify-between items-center">
+          <div className="block lg:flex lg:justify-between lg:items-center">
             <div>
-              <div className="text-center p-10 md:text-left font-serif">
+              <div className="text-center p-10 lg:text-left font-serif">
                 <h2 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl">
                   Hi. I am Savañ
                 </h2>
@@ -114,7 +114,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="flex justify-center lg:inline">
               <Eye />
             </div>
           </div>
