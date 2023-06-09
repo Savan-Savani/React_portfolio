@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import work_1 from "../../public/Images/work_1.png";
 import work_2 from "../../public/Images/work_2.png";
+import work_3 from "../../public/Images/work3.jpeg";
 import "../css/portfolio.css";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -93,6 +94,46 @@ const Portfolio = () => {
                     rel="noopener"
                     target="_blank"
                     href="https://github.com/Savan-Savani/Messenger"
+                  >
+                    <AiFillGithub className="text-[1.5rem]" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="portfolio flex justify-center p-10 mb-2rem">
+        <div class="project-card">
+          <div class="project-card__left">
+            <h4 class="text-sm">Socket.io ,webRtc ,Ejs ,Javascript</h4>
+          </div>
+          <div>
+            <div class="project-card__middle">
+              <Image src={work_3} alt="App image" className="work__image" />
+            </div>
+            <div class="project-card__right p-5">
+              <h2 class="text-2xl mb-2 portfoio__name">
+                Video Call
+                <br />
+                app
+              </h2>
+              <div className="whitespace-nowrap mt-[5%] absolute lg:left-[21rem] flex justify-center items-center portfolio__data">
+                <div className="text_container">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/Savan-Savani/Video-call-app"
+                    className="text_website text-[1rem]"
+                  >
+                    Show Source Code
+                  </a>
+                </div>
+                <span class="project-card__socials">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/Savan-Savani/Video-call-app"
                   >
                     <AiFillGithub className="text-[1.5rem]" />
                   </a>
