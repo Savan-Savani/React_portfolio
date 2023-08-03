@@ -58,7 +58,7 @@ export default function Home() {
                 <Image
                   src={profileImg}
                   objectFit="cover"
-                  layout="fill"
+                  
                   alt="profile image"
                 />
               </div>
