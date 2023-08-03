@@ -61,7 +61,7 @@ const ServiceSections = () => {
                     </p>
                   </div>
                   <div
-                    className="grid grid-cols-1 lg:grid-cols-2 mt-5 rounded-lg  border-2 py-10 relative"
+                    className="grid grid-cols-1 xl:grid-cols-2 mt-5 rounded-lg  border-2 py-10 relative"
                     style={{
                       background:
                         "linear-gradient(338.83deg, #f8c6ff -3.41%, rgba(255, 196, 255, 0) 52.31%), #ffeec4",
@@ -111,7 +111,7 @@ const ServiceSections = () => {
                       </Timeline>
                     </div>
 
-                    <div className="hidden lg:block">
+                    <div className="hidden xl:block">
                       <Timeline totalProgress={totalProgress1} paused>
                         <Tween from={{ scale: 0.5 }} to={{ scale: 1 }}>
                           <Image

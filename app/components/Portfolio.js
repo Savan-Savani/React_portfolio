@@ -3,7 +3,8 @@ import React from "react";
 import work_1 from "../../public/Images/work_1.png";
 import work_2 from "../../public/Images/work_2.png";
 import work_3 from "../../public/Images/work3.jpeg";
-import work_4 from "../../public/Images/work_4.png"
+import work_4 from "../../public/Images/work_4.png";
+import work_5 from "../../public/Images/work_5.png";
 import "../css/portfolio.css";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -21,6 +22,46 @@ const Portfolio = () => {
             mobile applications. Dedicated to delivering robust and scalable
             solutions to meet client objectives.
           </p>
+        </div>
+      </section>
+      <section className="portfolio flex justify-center p-10 mb-2rem">
+        <div class="project-card">
+          <div class="project-card__left">
+            <h4 class="text-sm"> React JS, SyncFusion, Tailwind CSS </h4>
+          </div>
+          <div>
+            <div class="project-card__middle">
+              <Image src={work_5} alt="App image" className="work__image" />
+            </div>
+            <div class="project-card__right p-5">
+              <h2 class="text-2xl mb-2 portfoio__name">
+                React
+                <br />
+                Dashboard
+              </h2>
+              <div className="whitespace-nowrap mt-[5%] absolute lg:left-[21rem] flex justify-center items-center  portfolio__data">
+                <div className="text_container">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://react-dashboard-git-main-savan-savani.vercel.app/"
+                    className="text-[1rem] text_website"
+                  >
+                    VISIT THE WEBSITE
+                  </a>
+                </div>
+                <span class="project-card__socials">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/Savan-Savani/React_Dashboard"
+                  >
+                    <AiFillGithub className="text-[1.5rem]" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="portfolio flex justify-center p-10 mb-2rem">
@@ -104,16 +145,16 @@ const Portfolio = () => {
         </div>
       </section>
       <section className="portfolio flex justify-center p-10 mb-2rem">
-        <div class="project-card">
-          <div class="project-card__left">
-            <h4 class="text-sm">NEXT JS ,TypeScript ,MongoDB ,Prisma</h4>
+        <div className="project-card">
+          <div className="project-card__left">
+            <h4 className="text-sm">NEXT JS ,TypeScript ,MongoDB ,Prisma</h4>
           </div>
           <div>
-            <div class="project-card__middle">
+            <div className="project-card__middle">
               <Image src={work_2} alt="App image" className="work__image" />
             </div>
-            <div class="project-card__right p-5">
-              <h2 class="text-2xl mb-2 portfoio__name">
+            <div className="project-card__right p-5">
+              <h2 className="text-2xl mb-2 portfoio__name">
                 Messenger
                 <br />
                 clone
@@ -129,7 +170,7 @@ const Portfolio = () => {
                     VISIT THE WEBSITE
                   </a>
                 </div>
-                <span class="project-card__socials">
+                <span className="project-card__socials">
                   <a
                     rel="noopener"
                     target="_blank"
@@ -144,17 +185,17 @@ const Portfolio = () => {
         </div>
       </section>
       <section className="portfolio flex justify-center p-10 mb-2rem">
-        <div class="project-card">
-          <div class="project-card__left">
-            <h4 class="text-sm">Socket.io ,webRtc ,Ejs ,Javascript</h4>
+        <div className="project-card">
+          <div className="project-card__left">
+            <h4 className="text-sm">Socket.io ,webRtc ,Ejs ,Javascript</h4>
           </div>
           <div>
-            <div class="project-card__middle">
+            <div className="project-card__middle">
               <Image src={work_3} alt="App image" className="work__image" />
             </div>
-            <div class="project-card__right p-5">
-              <h2 class="text-2xl mb-2 portfoio__name">
-                Video Call
+            <div className="project-card__right p-5">
+              <h2 className="text-2xl mb-2 portfoio__name">
+                VideoCall
                 <br />
                 app
               </h2>
@@ -169,7 +210,7 @@ const Portfolio = () => {
                     Show Source Code
                   </a>
                 </div>
-                <span class="project-card__socials">
+                <span className="project-card__socials">
                   <a
                     rel="noopener"
                     target="_blank"
