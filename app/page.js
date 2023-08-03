@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -8,6 +8,7 @@ import Eye from "./components/Eye";
 import ServiceSections from "./components/ServiceSections";
 import Portfolio from "./components/Portfolio";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import Head from "next/head";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,8 +22,34 @@ export default function Home() {
     window.open("/resume.pdf", "_blank");
   };
 
+  useEffect(() => {
+    // Google Analytics pageview tracking
+    const handleRouteChange = (url) => {
+      window.gtag('config', 'G-9ZM87GX19T', {
+        page_path: url,
+      });
+    };
+    const router = require("next/router");
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
+
   return (
     <div className={`app ${darkMode ? "dark" : ""}`}>
+      <Head>
+        {/* Google Analytics Script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZM87GX19T"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9ZM87GX19T');
+          `,
+        }} />
+      </Head>
       <main className="px-10 bg-[#fefaf6] dark:bg-gray-900 md:px-20 lg:px-40 ">
         <section className="h-auto mb-40">
           <nav className="py-10 mb-12 flex justify-between">
