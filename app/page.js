@@ -40,13 +40,13 @@ export default function Home() {
     <div className={`app ${darkMode ? "dark" : ""}`}>
       <Head>
         {/* Google Analytics Script */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZM87GX19T"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3LJTTGTYEN"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9ZM87GX19T');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-3LJTTGTYEN');
           `,
         }} />
       </Head>
