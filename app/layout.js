@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Script
+        <Script id='G-3LJTTGTYEN'
           strategy="beforeInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-3LJTTGTYEN"
         />
-        <Script strategy="afterInteractive">
+        <Script id='G-3LJTTGTYEN' strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
