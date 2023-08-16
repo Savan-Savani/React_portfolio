@@ -17,10 +17,10 @@ export default function Home() {
     setDarkMode(!darkMode);
   };
 
-  const handleResumeClick = (e) => {
-    e.preventDefault();
-    window.open("/resume.pdf", "_blank");
-  };
+  // const handleResumeClick = (e) => {
+  //   e.preventDefault();
+  //   window.open("/resume.pdf", "_blank");
+  // };
 
   useEffect(() => {
     // Google Analytics pageview tracking
@@ -67,24 +67,24 @@ export default function Home() {
               </h1>
             </div>
             <ul className="flex items-center">
-              <li>
+              <li className="">
                 {darkMode ? (
                   <BsFillSunFill
-                    className={`cursor-pointer text-2xl ${
+                    className={`cursor-pointer text-2xl md:text-4xl ${
                       darkMode ? "text-white" : ""
                     }`}
                     onClick={toggleDarkMode}
                   />
                 ) : (
                   <BsFillMoonStarsFill
-                    className={`cursor-pointer text-2xl ${
+                    className={`cursor-pointer text-2xl md:text-4xl ${
                       darkMode ? "text-white" : ""
                     }`}
                     onClick={toggleDarkMode}
                   />
                 )}
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   onClick={handleResumeClick}
@@ -94,7 +94,7 @@ export default function Home() {
                 >
                   Resume
                 </a>
-              </li>
+              </li> */}
               <li>
                 <div className="md:text-5xl flex justify-center py-3 text-gray-600 dark:text-gray-400 text-2xl">
                   <a
